@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>LinkIt</title>
+        <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Ubuntu">
+        <style>
+            * {
+                text-decoration:none;
+                margin:0;
+                padding:0;
+                color:#ffffff;
+            }
+            html {
+                font-family:'Ubuntu',serif;
+                
+            }
+            body {
+                
+                color:white;
+                overflow:hidden;
+                background:url('demoBg.png') no-repeat center center fixed;
+                background-size:cover;
+            }
+            .container {
+                
+                padding-top:2vh;
+                display:flex;
+                flex-direction:column;
+                align-items:center;
+                justify-content:center;
+            }
+            .container h1 , p {
+                margin:2vh;
+            }
+            .profilePic {
+                width:150px;
+                height:150px;
+                border:3px solid white;
+                border-radius:50%;
+            }
+            .profilePic:hover {
+                border:3px solid red;
+                transition:0.5s;
+            }
+            .links {
+                
+                display:flex;
+                flex-direction:column;
+                color:#ffffff;
+            }
+            .links div {
+                
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                font-family:'Ubuntu',serif;
+                font-size:30px;
+                margin:2vh;
+                margin-left:-1vh;
+                padding:2vh;
+                width:100%;
+                height:1.5vh;
+                border:1.5px solid white;
+                border-radius:50px;
+            }
+            .links:hover {
+                color:##b700ff;
+                transition:to-right,0.5s;
+            }
+            .links i {
+                padding:2vh;
+            }
+            footer {
+                border-top:2px solid white;
+                text-align:center;
+                padding:5px;
+                color:#ffffff;
+                position: relative;
+                height: 200px;
+                margin-top:19vh;
+            }
+            .instagram {
+                margin-left:-2vh;
+            }
+        </style>
+        <script src="https://kit.fontawesome.com/dabeb5f8c7.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">
+            <img class="profilePic" src="profilePic.jpeg" alt="User picture" />
+            <h1>Hi , I am Akash Nath</h1>
+            <p>and I am a selft taught programmer and a self taught guitarist</p>
+            <div class="links">
+                <div class="instagram"><a href='https://www.instagram.com/invites/contact/?i=19lwqy5y3800r&utm_content=hblizqj'>
+                    <i class='fa fa-instagram'></i>
+                    Instagram
+                </a>
+                </div>
+                <div class="instagram"><a href='https://youtube.com/channel/UCV74IR9QWCpctJLZFhiU88g'>
+                    <i class='fa fa-youtube-play'></i>
+                    YouTube
+                </a>
+                </div>
+                <div class="instagram"><a href='https://twitter.com/anath5440?t=eKPZ-VW3F1HzbTNg9ZWGSQ&s=09'>
+                    <i class='fa fa-twitter'></i>
+                    Twitter
+                    </a>
+                </div>
+                <div class="instagram"><a href='mailto:anath5440@gmail.com'>
+                    <i class='fa fa-envelope'></i>
+                    Email
+                    </a>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <i class='fa fa-copyright'></i>
+            2022 All Rights Reserved
+        </footer>
+    </body>
+</html>
