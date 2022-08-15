@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
         <title>LinkIt</title>
         <link rel="stylesheet"
   href="https://fonts.googleapis.com/css?family=Ubuntu">
@@ -11,10 +11,10 @@
                 margin:0;
                 padding:0;
                 color:#ffffff;
+                /*outline:1px solid lime;*/
             }
             html {
                 font-family:'Ubuntu',serif;
-                
             }
             body {
                 
@@ -23,66 +23,150 @@
                 background:url('demoBg.png') no-repeat center center fixed;
                 background-size:cover;
             }
-            .container {
-                
-                padding-top:2vh;
-                display:flex;
-                flex-direction:column;
-                align-items:center;
-                justify-content:center;
+            @media (max-width:675px){
+                .container {
+                    padding-top:2vh;
+                    display:flex;
+                    flex-direction:column;
+                    align-items:center;
+                    justify-content:center;
+                }
+                .container span {
+                    margin:2vh;
+                }
+                .profilePic {
+                    margin:0.5vh;
+                    width:150px;
+                    height:150px;
+                    border:3px solid white;
+                    border-radius:50%;
+                }
+                .profilePic:hover {
+                    border:3px solid red;
+                    transition:0.5s;
+                }
+                .links {
+                    display:flex;
+                    flex-direction:column;
+                    color:#ffffff;
+                }
+                .links div {
+                    display:flex;
+                    align-items:center;
+                    justify-content:center;
+                    font-family:'Ubuntu',serif;
+                    font-size:30px;
+                    margin:1vh;
+                    margin-left:-1vh;
+                    padding:2vh;
+                    width:100%;
+                    height:20px;
+                    border:1.5px solid white;
+                    border-radius:50px;
+                }
+                .links:hover {
+                    color:##b700ff;
+                    transition:to-right,0.5s;
+                }
+                .links i {
+                    padding:2vh;
+                }
+                footer {
+                    border-top:2px solid white;
+                    text-align:center;
+                    padding:2px;
+                    color:#ffffff;
+                    position: relative;
+                    height: 200px;
+                    margin-top:18vh;
+                }
+                .instagram {
+                    margin-left:-2vh;
+                }
             }
-            .container h1 , p {
-                margin:2vh;
-            }
-            .profilePic {
-                width:150px;
-                height:150px;
-                border:3px solid white;
-                border-radius:50%;
-            }
-            .profilePic:hover {
-                border:3px solid red;
-                transition:0.5s;
-            }
-            .links {
-                
-                display:flex;
-                flex-direction:column;
-                color:#ffffff;
-            }
-            .links div {
-                
-                display:flex;
-                align-items:center;
-                justify-content:center;
-                font-family:'Ubuntu',serif;
-                font-size:30px;
-                margin:2vh;
-                margin-left:-1vh;
-                padding:2vh;
-                width:100%;
-                height:1.5vh;
-                border:1.5px solid white;
-                border-radius:50px;
-            }
-            .links:hover {
-                color:##b700ff;
-                transition:to-right,0.5s;
-            }
-            .links i {
-                padding:2vh;
-            }
-            footer {
-                border-top:2px solid white;
-                text-align:center;
-                padding:5px;
-                color:#ffffff;
-                position: relative;
-                height: 200px;
-                margin-top:19vh;
-            }
-            .instagram {
-                margin-left:-2vh;
+            @media (max-width:1200px) {
+                    .container {
+                    padding-top:2vh;
+                    display:flex;
+                    align-items:center;
+                    justify-content:center;
+                }
+                .intro {
+                    width:70%;
+                }
+            
+                .intro h1 {
+                    margin:1vh;
+                }
+                .intro h3 {
+                    margin:1vh;
+                    word-wrap: break-word;
+                }
+                .profilePic {
+                    margin:0.5vh;
+                    width:150px;
+                    height:150px;
+                    border:3px solid white;
+                    border-radius:50%;
+                }
+                .profilePic:hover {
+                    border:3px solid red;
+                    transition:0.5s;
+                }
+                .links {
+                    display:flex;
+                    flex-direction:column;
+                    color:#ffffff;
+                }
+                .links div {
+                    display:flex;
+                    align-items:center;
+                    justify-content:center;
+                    font-family:'Ubuntu',serif;
+                    font-size:30px;
+                    margin:2vh;
+                    margin-left:-1vh;
+                    padding:2vh;
+                    width:100%;
+                    height:20px;
+                    border:1.5px solid white;
+                    border-radius:50px;
+                }
+                .links div:hover {
+                    border:1.5px solid red;
+                    transition:0.5s;
+                }
+                .links a {
+                    margin:2vh;
+                    margin-left:-2vh;
+                }
+                .links a:hover {
+                    color:red;
+                    transition:0.5s;
+                }
+                .links:hover {
+                    color:##b700ff;
+                    transition:0.5s;
+                }
+                .links i {
+                    padding:2vh;
+                }
+                .links i:hover {
+                    color:red;
+                    transition:0.5s;
+                }
+                footer {
+                    border-top:2px solid white;
+                    text-align:center;
+                    padding:5px;
+                    color:#ffffff;
+                    position: relative;
+                    height: 200px;
+                    margin-top:17vh;
+                }
+                .instagram {
+                    margin-left:-2vh;
+                }
             }
         </style>
         <script src="https://kit.fontawesome.com/dabeb5f8c7.js" crossorigin="anonymous"></script>
@@ -90,8 +174,10 @@
     <body>
         <div class="container">
             <img class="profilePic" src="profilePic.jpeg" alt="User picture" />
+            <div class='intro'>
             <h1>Hi , I am Akash Nath</h1>
-            <p>and I am a selft taught programmer and a self taught guitarist</p>
+            <h3>and I am a self taught programmer and a self taught guitarist</h3>
+            </div>
             <div class="links">
                 <div class="instagram"><a href='https://www.instagram.com/invites/contact/?i=19lwqy5y3800r&utm_content=hblizqj'>
                     <i class='fa fa-instagram'></i>
